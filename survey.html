@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Matching Survey</title>
+</head>
+<body>
+    <div class="logo-container">
+        <!-- Replace 'logo-image.jpg' with the actual file path of your logo image -->
+        <img src="/static/logo.black.png" alt="Description of the image">
+
+    </div>
+    <h1>Scholarship Matching Survey</h1>
+    <form action="/submit_survey" method="POST">
+
+
+        <p>What is your gender?</p>
+        <div>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="none"> Prefer not to specify</label>
+        </div>
+        <div>
+        
+         <p>Do you have demonstrated financial need (FAFSA)?</p>
+        <input type="radio" name="financial_need" value="yes"> Yes
+        <input type="radio" name="financial_need" value="no"> No<br><br>
+        
+        <p>Do you have a GPA of 2.5 or higher?</p>
+        <input type="radio" name="gpa_2.5" value="yes"> Yes
+        <input type="radio" name="gpa_2.5" value="no"> No<br><br>
+        
+        <p>Do you have a GPA of 3.0 or higher?</p>
+        <input type="radio" name="gpa_3.0" value="yes"> Yes
+        <input type="radio" name="gpa_3.0" value="no"> No<br><br>
+        
+        <p>Do you plan to attend community college, trade school, or university?</p>
+        <input type="radio" name="further_education" value="yes"> Yes
+        <input type="radio" name="further_education" value="no"> No<br><br>
+        
+        
+        <p>Are you planning to pursue a degree in agriculture?</p>
+        <input type="radio" name="agriculture_degree" value="yes"> Yes
+        <input type="radio" name="agriculture_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a degree in business administration, management, or entrepreneurship?</p>
+        <input type="radio" name="business_admin_degree" value="yes"> Yes
+        <input type="radio" name="business_admin_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a degree in engineering?</p>
+        <input type="radio" name="engineering_degree" value="yes"> Yes
+        <input type="radio" name="engineering_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a degree in something else STEM related?</p>
+        <input type="radio" name="stem_degree" value="yes"> Yes
+        <input type="radio" name="stem_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a major in automotive studies?</p>
+        <input type="radio" name="automotive_studies_degree" value="yes"> Yes
+        <input type="radio" name="automotive_studies_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a degree in the arts?</p>
+        <input type="radio" name="arts_degree" value="yes"> Yes
+        <input type="radio" name="arts_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a degree in education?</p>
+        <input type="radio" name="education_degree" value="yes"> Yes
+        <input type="radio" name="education_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a degree in viticulture or enology?</p>
+        <input type="radio" name="viticulture_enology_degree" value="yes"> Yes
+        <input type="radio" name="viticulture_enology_degree" value="no"> No<br><br>
+        
+        <p>Are you planning to pursue a degree in the medical field?</p>
+        <input type="radio" name="medical_degree" value="yes"> Yes
+        <input type="radio" name="medical_degree" value="no"> No<br><br>
+        
+        <p>Are you an active member of the FFA?</p>
+        <input type="radio" name="ffa_member" value="yes"> Yes
+        <input type="radio" name="ffa_member" value="no"> No<br><br>
+        
+        <p>Do you attend Templeton Presbyterian Church?</p>
+        <input type="radio" name="templeton_church_attendee" value="yes"> Yes
+        <input type="radio" name="templeton_church_attendee" value="no"> No<br><br>
+        
+        <p>Are you involved in community service?</p>
+        <input type="radio" name="community_service" value="yes"> Yes
+        <input type="radio" name="community_service" value="no"> No<br><br>
+        
+        <p>Do you plan to attend trade school?</p>
+        <input type="radio" name="trade_school_attendee" value="yes"> Yes
+        <input type="radio" name="trade_school_attendee" value="no"> No<br><br>
+        
+        <p>Did you work a part-time job in high school?</p>
+        <input type="radio" name="participated_community_service" value="yes"> Yes
+        <input type="radio" name="participated_community_service" value="no"> No<br><br>
+        
+        <p>Did you participate in THS Drama?</p>
+        <input type="radio" name="ths_drama_participant" value="yes"> Yes
+        <input type="radio" name="ths_drama_participant" value="no"> No<br><br>
+        
+        <p>Were you a THS athlete?</p>
+        <input type="radio" name="ths_football_player" value="yes"> Yes
+        <input type="radio" name="ths_football_player" value="no"> No<br><br>
+        
+        <p>Are you involved with anything that supports DEI (Diversity, Equity, and Inclusion)?</p>
+        <input type="radio" name="dei_support_involved" value="yes"> Yes
+        <input type="radio" name="dei_support_involved" value="no"> No<br><br>
+        
+        <p>Do you have equine experience?</p>
+        <input type="radio" name="equine_experience" value="yes"> Yes
+        <input type="radio" name="equine_experience" value="no"> No<br><br>
+        
+        <p>Are you an active FNL member?</p>
+        <input type="radio" name="fnl_member" value="yes"> Yes
+        <input type="radio" name="fnl_member" value="no"> No<br><br>
+        
+        <p>Are you an Eagle Scout?</p>
+        <input type="radio" name="eagle_scout" value="yes"> Yes
+        <input type="radio" name="eagle_scout" value="no"> No<br><br>
+        
+        <p>Are you a first-generation student?</p>
+        <input type="radio" name="first_generation_student" value="yes"> Yes
+        <input type="radio" name="first_generation_student" value="no"> No<br><br>
+        
+        <p>Do you have an IEP or 504 plan?</p>
+        <input type="radio" name="iep_504_plan" value="yes"> Yes
+        <input type="radio" name="iep_504_plan" value="no"> No<br><br>
+        
+        <p>Did you participate in AVID?</p>
+        <input type="radio" name="avid_participant" value="yes"> Yes
+        <input type="radio" name="avid_participant" value="no"> No<br><br>
+        
+        <p>Are you a member of the LGBTQIA+ community?</p>
+        <input type="radio" name="lgbtqia_member" value="yes"> Yes
+        <input type="radio" name="lgbtqia_member" value="no"> No<br><br>
+        
+        <p>Do you have a family member that is a veteran?</p>
+        <input type="radio" name="veteran_family_member" value="yes"> Yes
+        <input type="radio" name="veteran_family_member" value="no"> No<br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matched Scholarships</title>
+    <link rel="stylesheet" href="/static/styles_matched.css">
+</head>
+<body>
+    <h1>Matched Scholarships</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Criteria</th>
+                <th>Amount</th>
+                <th>Deadline</th>
+                <th>How to Apply</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for scholarship in scholarships %}
+                {% for key, value in scholarship.items() %}
+                    {% if value == True %}
+                        <tr>
+                            <td>{{ scholarship.name }}</td>
+                            <td>{{ scholarship.criteria }}</td>
+                            <td>{{ scholarship.amount }}</td>
+                            <td>{{ scholarship.deadline }}</td>
+                            <td>{{ scholarship.how_to_apply }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

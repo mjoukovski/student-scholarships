@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+body {
+    font-family: "Droid Sans", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000; /* Black text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Style the form container */
+form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style paragraphs */
+p {
+    margin-bottom: 20px;
+    font-weight: bold; /* Make questions bold */
+    color: #000; /* Black text color */
+}
+
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000; /* Black text color */
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style radio buttons for gender horizontally */
+input[name="gender"] {
+    display: inline-block;
+}
+
+/* Style "yes" and "no" radio buttons */
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style "yes" radio buttons */
+input[type="radio"]:checked + label {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+/* Hover effect for "yes" and "no" radio buttons */
+input[type="radio"] + label:hover {
+    background-color: #f0f0f0;
+}
+
+/* Additional styles */
+
+/* Style the submit button */
+input[type="submit"] {
+    display: block;
+    width: 200px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 15px; /* Increase padding for larger button */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    font-size: 18px; /* Increase font size for better readability */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer;
+}
+
+/* Add styles for the logo container */
+.logo-container {
+    text-align: center; /* Center the logo horizontally */
+    margin-bottom: 20px; /* Add space between logo and heading */
+    background: transparent; /* Set the background to transparent */
+}
+
+/* Add styles for the logo image */
+.logo-container img {
+    width: 150px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Add space above the logo */
+}
